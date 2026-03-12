@@ -6,7 +6,7 @@ from langchain_classic.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_classic.chains import RetrievalQA
-from langchain.llms import Ollama
+from langchain_classic.llms import Ollama
 
 
 # -----------------------------
