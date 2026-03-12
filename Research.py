@@ -90,9 +90,9 @@ if uploaded_file:
 
     st.sidebar.success("✅ File uploaded successfully!")
 
-st.sidebar.markdown("---")
+    # Clear cache so vector DB rebuilds
+    st.cache_resource.clear()
 
-st.sidebar.markdown("### 🤖 Model")
 
 model_name = st.sidebar.selectbox(
     "Choose Ollama Model",
